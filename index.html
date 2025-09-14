@@ -14,7 +14,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
       color: #4b2e83;
     }
@@ -29,11 +29,13 @@
       margin-bottom: 2rem;
       font-style: italic;
       color: #6b4b99;
+      padding: 0 20px;
     }
 
     img {
       max-width: 250px;
-      border-radius: 10%;
+      width: 80%;
+      border-radius: 20%;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
       margin-bottom: 2rem;
     }
@@ -42,12 +44,47 @@
       font-size: 1.8rem;
       font-weight: bold;
       color: #d2691e;
+      padding: 0 20px;
     }
 
     .decor {
       font-size: 2rem;
       margin: 1rem 0;
       color: #ffb347;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      .coming {
+        font-size: 1.5rem;
+      }
+      .decor {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      img {
+        max-width: 180px;
+      }
+      .coming {
+        font-size: 1.2rem;
+      }
+      .decor {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
